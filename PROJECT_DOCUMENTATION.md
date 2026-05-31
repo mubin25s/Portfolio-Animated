@@ -1,6 +1,6 @@
 # Portfolio-Goku: A Cinematic Digital Experience
 
-## 🚀 Project Vision & Purpose
+## 🚀 Project Vision & Purpose 
 
 The **Portfolio-Goku** project was conceived as more than just a standard professional resume. Its primary purpose is to serve as a high-fidelity, interactive showcase that merges technical prowess with creative storytelling. By blending personal branding with iconic pop-culture themes—starting with the legendary Goku—the project aims to create a memorable and engaging journey for recruiters, clients, and fellow developers.
 
