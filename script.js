@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Device Detection
+    // Device Detection 
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     const isLowPowerDevice = window.innerWidth < 768; // Simple proxy
 
