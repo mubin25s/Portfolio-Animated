@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const profilePic = document.querySelector('.profile-pic');
     const charSwitcher = document.getElementById('character-switcher');
     const switchBtns = document.querySelectorAll('.switch-btn');
+    const jokeText = document.getElementById('joke-text');
     
     // Initial Setup
     const currentCharacter = localStorage.getItem('character') || 'goku';
@@ -27,6 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.documentElement.setAttribute('data-character', currentCharacter);
     document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (jokeText) {
+        const jokes = [
+            "Why do Java developers wear glasses? Because they don't C#.",
+            "Why did the CSS developer go to therapy? They had too many unresolved issues.",
+            "Why was the JavaScript file sad? Because it didn't know how to 'null' its feelings."
+        ];
+        let jokeIndex = 0;
+        setInterval(() => {
+            jokeIndex = (jokeIndex + 1) % jokes.length;
+            jokeText.classList.add('updating');
+            setTimeout(() => {
+                jokeText.textContent = jokes[jokeIndex];
+                jokeText.classList.remove('updating');
+            }, 200);
+        }, 5000);
+    }
 
     // Update active button in switcher
     switchBtns.forEach(btn => {
@@ -1134,5 +1152,4 @@ document.addEventListener('DOMContentLoaded', () => {
          if (wickAnimId) { clearInterval(wickAnimId); wickAnimId = null; }
      }
 });
-
 

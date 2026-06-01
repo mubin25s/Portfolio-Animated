@@ -889,6 +889,23 @@ h1, h2, h3 {
     transform: translateX(5px);
 }
 
+.joke-line {
+    margin: 0 0 1.5rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    min-height: 1.5em;
+}
+
+#joke-text {
+    display: inline-block;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#joke-text.updating {
+    opacity: 0;
+    transform: translateY(6px);
+}
+
 .hero-actions {
     margin-top: 2rem;
     display: flex;
@@ -1738,6 +1755,5 @@ body {
 .star-rating i.hover-active {
     color: #ffd700;
 }
-
 
 
